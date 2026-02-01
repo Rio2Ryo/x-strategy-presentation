@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 60px 80px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .pattern-icon {
+      font-size: 64px;
+      margin-right: 25px;
+    }
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #1DA1F2;
+    }
+    .subtitle {
+      font-size: 28px;
+      color: #8899a6;
+      margin-top: 8px;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      flex: 1;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 30px 35px;
+      border-left: 5px solid #1DA1F2;
+    }
+    .card-title {
+      font-size: 26px;
+      color: #1DA1F2;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .card-title span {
+      margin-right: 12px;
+      font-size: 28px;
+    }
+    .card-content {
+      font-size: 24px;
+      line-height: 1.8;
+    }
+    .card-content li {
+      margin-bottom: 12px;
+      list-style: none;
+    }
+    .card-content li::before {
+      content: "▸ ";
+      color: #1DA1F2;
+    }
+    .merit { color: #4ade80; }
+    .demerit { color: #f87171; }
+    .difficulty {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .difficulty-label {
+      font-size: 24px;
+      margin-right: 20px;
+    }
+    .stars {
+      font-size: 32px;
+      color: #fbbf24;
+      letter-spacing: 5px;
+    }
+    .difficulty-text {
+      font-size: 22px;
+      color: #8899a6;
+      margin-left: 20px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="pattern-icon">📚</span>
+    <div>
+      <div class="title">パターン② スキル学習×初心者</div>
+      <div class="subtitle">学びながら発信する成長ドキュメンタリー</div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="card">
+      <div class="card-title"><span>🎯</span>ターゲット</div>
+      <ul class="card-content">
+        <li>同じスキルを学び始めた初心者</li>
+        <li>学習を始めようか迷っている人</li>
+        <li>独学で挫折した経験がある人</li>
+        <li>仲間を見つけたい学習者</li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="card-title"><span>📝</span>発信内容</div>
+      <ul class="card-content">
+        <li>学習の進捗・つまずきポイント</li>
+        <li>初心者目線のわかりやすい解説</li>
+        <li>使用教材・学習方法のレビュー</li>
+        <li>モチベーション維持のコツ</li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="card-title"><span>✅</span>メリット</div>
+      <ul class="card-content">
+        <li class="merit">専門知識がなくても始められる</li>
+        <li class="merit">共感を得やすい（同じ立場の仲間）</li>
+        <li class="merit">成長過程自体がコンテンツになる</li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <div class="card-title"><span>⚠️</span>デメリット</div>
+      <ul class="card-content">
+        <li class="demerit">学習をやめると発信が止まる</li>
+        <li class="demerit">成長後のポジション変更が必要</li>
+        <li class="demerit">間違った情報を発信するリスク</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="difficulty">
+    <span class="difficulty-label">難易度:</span>
+    <span class="stars">★★☆☆☆</span>
+    <span class="difficulty-text">初級 - 最も始めやすいパターン</span>
+  </div>
+  
+  <div class="slide-num">17 / 33</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 60px;
+      color: #1DA1F2;
+    }
+    .harm {
+      display: flex;
+      gap: 40px;
+    }
+    .harm-item {
+      width: 380px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 25px;
+      padding: 40px;
+      text-align: center;
+    }
+    .letter {
+      font-size: 100px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .harm-item:nth-child(1) .letter { color: #e74c3c; }
+    .harm-item:nth-child(2) .letter { color: #f39c12; }
+    .harm-item:nth-child(3) .letter { color: #9b59b6; }
+    .harm-item:nth-child(4) .letter { color: #27ae60; }
+    .word {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .japanese {
+      font-size: 28px;
+      color: #8899a6;
+      margin-bottom: 20px;
+    }
+    .examples {
+      font-size: 22px;
+      color: #1DA1F2;
+      line-height: 1.6;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">📋 HARMの法則</h1>
+  <div class="harm">
+    <div class="harm-item">
+      <div class="letter">H</div>
+      <div class="word">Health</div>
+      <div class="japanese">健康</div>
+      <div class="examples">ダイエット<br>睡眠・運動</div>
+    </div>
+    <div class="harm-item">
+      <div class="letter">A</div>
+      <div class="word">Ambition</div>
+      <div class="japanese">夢・キャリア</div>
+      <div class="examples">転職・副業<br>スキルアップ</div>
+    </div>
+    <div class="harm-item">
+      <div class="letter">R</div>
+      <div class="word">Relation</div>
+      <div class="japanese">人間関係</div>
+      <div class="examples">恋愛・結婚<br>コミュニケーション</div>
+    </div>
+    <div class="harm-item">
+      <div class="letter">M</div>
+      <div class="word">Money</div>
+      <div class="japanese">お金</div>
+      <div class="examples">投資・節約<br>収入アップ</div>
+    </div>
+  </div>
+  <div class="slide-num">12 / 33</div>
+</body>
+</html>

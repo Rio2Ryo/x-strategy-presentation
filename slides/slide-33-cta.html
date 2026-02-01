@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .main-text {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      background: linear-gradient(90deg, #1DA1F2, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .sub-text {
+      font-size: 40px;
+      color: #8899a6;
+      margin-bottom: 60px;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    .cta-btn {
+      font-size: 32px;
+      padding: 25px 50px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .cta-btn.primary {
+      background: #1DA1F2;
+      color: white;
+    }
+    .cta-btn.secondary {
+      background: transparent;
+      border: 3px solid #1DA1F2;
+      color: #1DA1F2;
+    }
+    .presenters {
+      font-size: 36px;
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .kuro { color: #333; background: #000; padding: 10px 30px; border-radius: 30px; }
+    .shiro { color: #333; background: #fff; padding: 10px 30px; border-radius: 30px; }
+    .bye {
+      font-size: 48px;
+      margin-top: 40px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="main-text">さあ、始めよう！</h1>
+  <div class="sub-text">質問があればコメントで！リプ返します💬</div>
+  <div class="cta-buttons">
+    <div class="cta-btn primary">👍 いいね</div>
+    <div class="cta-btn primary">🔄 リポスト</div>
+    <div class="cta-btn secondary">🔔 フォロー</div>
+  </div>
+  <div class="presenters">
+    <span class="kuro">🖤 クロ</span>
+    <span>×</span>
+    <span class="shiro">🤍 シロ</span>
+  </div>
+  <div class="bye">またね！🖤🤍</div>
+  <div class="slide-num">33 / 33</div>
+</body>
+</html>

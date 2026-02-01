@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 60px;
+      color: #1DA1F2;
+    }
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 80%;
+    }
+    .point {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      background: rgba(255,255,255,0.05);
+      padding: 40px 50px;
+      border-radius: 25px;
+    }
+    .point-num {
+      font-size: 60px;
+      font-weight: bold;
+      color: #1DA1F2;
+      background: rgba(29, 161, 242, 0.2);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .point-text {
+      font-size: 36px;
+      flex: 1;
+    }
+    .point-highlight {
+      color: #f39c12;
+      font-weight: bold;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">📌 3つの重要ポイント</h1>
+  <div class="points">
+    <div class="point">
+      <div class="point-num">1</div>
+      <div class="point-text">アルゴリズムを味方に — <span class="point-highlight">リプ返しでスコア75倍</span></div>
+    </div>
+    <div class="point">
+      <div class="point-num">2</div>
+      <div class="point-text">1アカウント1ジャンル — <span class="point-highlight">発信軸を明確に</span></div>
+    </div>
+    <div class="point">
+      <div class="point-num">3</div>
+      <div class="point-text">90日で1,000人は可能 — <span class="point-highlight">毎日コツコツ</span></div>
+    </div>
+  </div>
+  <div class="slide-num">31 / 33</div>
+</body>
+</html>

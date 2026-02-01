@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>スライド5: SNS比較表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 80px;
+        }
+        .slide-number {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            font-size: 24px;
+            color: rgba(255,255,255,0.4);
+        }
+        h1 {
+            font-size: 72px;
+            font-weight: bold;
+            color: #1DA1F2;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .table-container {
+            width: 100%;
+            max-width: 1700px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 32px;
+        }
+        th {
+            background: rgba(29, 161, 242, 0.3);
+            padding: 30px 20px;
+            text-align: center;
+            border: 2px solid rgba(29, 161, 242, 0.5);
+            font-weight: bold;
+        }
+        th:first-child {
+            width: 200px;
+        }
+        td {
+            padding: 35px 25px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.15);
+            vertical-align: middle;
+        }
+        tr:nth-child(even) {
+            background: rgba(255,255,255,0.03);
+        }
+        .platform-header {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .platform-x {
+            color: #1DA1F2;
+        }
+        .platform-ig {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .platform-tiktok {
+            color: #00f2ea;
+        }
+        .platform-yt {
+            color: #ff0000;
+        }
+        .rating {
+            font-size: 36px;
+        }
+        .high {
+            color: #4ade80;
+        }
+        .medium {
+            color: #fbbf24;
+        }
+        .low {
+            color: #f87171;
+        }
+        .metric-label {
+            text-align: left;
+            font-weight: bold;
+            color: rgba(255,255,255,0.9);
+        }
+        .highlight-cell {
+            background: rgba(29, 161, 242, 0.15);
+            border: 2px solid #1DA1F2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-number">05</div>
+    <h1>📊 SNS比較表</h1>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><span class="platform-header platform-x">𝕏</span></th>
+                    <th><span class="platform-header platform-ig">Instagram</span></th>
+                    <th><span class="platform-header platform-tiktok">TikTok</span></th>
+                    <th><span class="platform-header platform-yt">YouTube</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="metric-label">拡散力</td>
+                    <td class="highlight-cell"><span class="rating high">◎ 最強</span></td>
+                    <td><span class="rating low">△ 弱い</span></td>
+                    <td><span class="rating high">◎ 強い</span></td>
+                    <td><span class="rating medium">○ 普通</span></td>
+                </tr>
+                <tr>
+                    <td class="metric-label">収益化</td>
+                    <td class="highlight-cell"><span class="rating high">◎ 簡単</span></td>
+                    <td><span class="rating medium">○ 案件中心</span></td>
+                    <td><span class="rating medium">○ 案件中心</span></td>
+                    <td><span class="rating high">◎ 広告収益</span></td>
+                </tr>
+                <tr>
+                    <td class="metric-label">参入障壁</td>
+                    <td class="highlight-cell"><span class="rating high">◎ 低い</span></td>
+                    <td><span class="rating medium">○ 中程度</span></td>
+                    <td><span class="rating medium">○ 中程度</span></td>
+                    <td><span class="rating low">△ 高い</span></td>
+                </tr>
+                <tr>
+                    <td class="metric-label">必要スキル</td>
+                    <td class="highlight-cell">テキストのみ</td>
+                    <td>写真・デザイン</td>
+                    <td>動画編集</td>
+                    <td>動画制作全般</td>
+                </tr>
+                <tr>
+                    <td class="metric-label">初速</td>
+                    <td class="highlight-cell"><span class="rating high">◎ 速い</span></td>
+                    <td><span class="rating low">△ 遅い</span></td>
+                    <td><span class="rating high">◎ 速い</span></td>
+                    <td><span class="rating low">△ 遅い</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

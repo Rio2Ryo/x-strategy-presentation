@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>スライド13: プロフィール6要素</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 80px;
+        }
+        .slide-number {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            font-size: 24px;
+            color: rgba(255,255,255,0.4);
+        }
+        h1 {
+            font-size: 68px;
+            font-weight: bold;
+            color: #1DA1F2;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            width: 100%;
+            max-width: 1700px;
+        }
+        .element-card {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(29, 161, 242, 0.3);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .element-card:hover {
+            background: rgba(29, 161, 242, 0.1);
+            border-color: #1DA1F2;
+            transform: translateY(-5px);
+        }
+        .element-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #1DA1F2;
+            border-radius: 50%;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .element-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .element-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        .element-desc {
+            font-size: 22px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        .element-tip {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #1DA1F2;
+            font-weight: bold;
+        }
+        .bottom-note {
+            margin-top: 40px;
+            font-size: 28px;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+        }
+        .bottom-note span {
+            color: #1DA1F2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-number">13</div>
+    <h1>👤 プロフィール6要素</h1>
+    
+    <div class="elements-grid">
+        <div class="element-card">
+            <div class="element-number">1</div>
+            <div class="element-icon">🖼️</div>
+            <div class="element-title">アイコン</div>
+            <div class="element-desc">顔出し or 印象的なイラスト<br>覚えてもらえる一貫性</div>
+            <div class="element-tip">💡 明るく目立つ色使い</div>
+        </div>
+        
+        <div class="element-card">
+            <div class="element-number">2</div>
+            <div class="element-icon">🎨</div>
+            <div class="element-title">ヘッダー</div>
+            <div class="element-desc">あなたが何者かを一目で伝える<br>価値提案を視覚化</div>
+            <div class="element-tip">💡 実績・テーマを明記</div>
+        </div>
+        
+        <div class="element-card">
+            <div class="element-number">3</div>
+            <div class="element-icon">✏️</div>
+            <div class="element-title">名前</div>
+            <div class="element-desc">覚えやすく呼びやすい<br>肩書きを添える</div>
+            <div class="element-tip">💡 検索されやすさも意識</div>
+        </div>
+        
+        <div class="element-card">
+            <div class="element-number">4</div>
+            <div class="element-icon">📝</div>
+            <div class="element-title">バイオ（自己紹介）</div>
+            <div class="element-desc">何を発信するか明確に<br>実績・経歴・人柄</div>
+            <div class="element-tip">💡 フォローするメリットを書く</div>
+        </div>
+        
+        <div class="element-card">
+            <div class="element-number">5</div>
+            <div class="element-icon">📌</div>
+            <div class="element-title">固定ツイート</div>
+            <div class="element-desc">自己紹介 or 最高のコンテンツ<br>初見の人への名刺代わり</div>
+            <div class="element-tip">💡 定期的に更新する</div>
+        </div>
+        
+        <div class="element-card">
+            <div class="element-number">6</div>
+            <div class="element-icon">🔗</div>
+            <div class="element-title">リンク</div>
+            <div class="element-desc">導線を作る<br>ブログ・LP・リンク集</div>
+            <div class="element-tip">💡 収益化の入口になる</div>
+        </div>
+    </div>
+    
+    <div class="bottom-note">
+        プロフィールは<span>「3秒で判断される」</span>— 第一印象が全て
+    </div>
+</body>
+</html>

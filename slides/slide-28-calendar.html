@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 52px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #1DA1F2;
+    }
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 20px;
+      width: 95%;
+    }
+    .day {
+      background: rgba(255,255,255,0.05);
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .day-name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1DA1F2;
+      margin-bottom: 20px;
+    }
+    .day-content {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    .day-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .tip {
+      margin-top: 40px;
+      font-size: 28px;
+      color: #8899a6;
+      text-align: center;
+    }
+    .tip strong {
+      color: #1DA1F2;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">📅 週間コンテンツカレンダー</h1>
+  <div class="calendar">
+    <div class="day">
+      <div class="day-name">月</div>
+      <div class="day-icon">💡</div>
+      <div class="day-content">有益情報<br>（ノウハウ）</div>
+    </div>
+    <div class="day">
+      <div class="day-name">火</div>
+      <div class="day-icon">📖</div>
+      <div class="day-content">実体験<br>失敗談</div>
+    </div>
+    <div class="day">
+      <div class="day-name">水</div>
+      <div class="day-icon">📋</div>
+      <div class="day-content">まとめ<br>投稿</div>
+    </div>
+    <div class="day">
+      <div class="day-name">木</div>
+      <div class="day-icon">🛠️</div>
+      <div class="day-content">有益情報<br>（ツール紹介）</div>
+    </div>
+    <div class="day">
+      <div class="day-name">金</div>
+      <div class="day-icon">🔥</div>
+      <div class="day-content">トレンド<br>×専門性</div>
+    </div>
+    <div class="day">
+      <div class="day-name">土</div>
+      <div class="day-icon">💭</div>
+      <div class="day-content">共感<br>ポスト</div>
+    </div>
+    <div class="day">
+      <div class="day-name">日</div>
+      <div class="day-icon">📊</div>
+      <div class="day-content">週間<br>振り返り</div>
+    </div>
+  </div>
+  <div class="tip">💡 <strong>有益:共感 = 7:3</strong> の比率を意識！</div>
+  <div class="slide-num">28 / 33</div>
+</body>
+</html>

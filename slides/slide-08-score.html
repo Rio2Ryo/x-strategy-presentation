@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 52px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #1DA1F2;
+    }
+    .score-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 80%;
+    }
+    .score-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.05);
+      padding: 25px 40px;
+      border-radius: 15px;
+      font-size: 32px;
+    }
+    .score-item.highlight {
+      background: linear-gradient(90deg, #f39c12, #e74c3c);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .action { color: #8899a6; }
+    .score { font-weight: bold; color: #1DA1F2; }
+    .score-item.highlight .score { 
+      color: white; 
+      font-size: 42px;
+    }
+    .big-number {
+      font-size: 150px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #f39c12, #e74c3c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 30px;
+    }
+    .caption {
+      font-size: 36px;
+      color: #8899a6;
+      margin-top: 10px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">エンゲージメントスコア</h1>
+  <div class="score-table">
+    <div class="score-item">
+      <span class="action">👍 いいね</span>
+      <span class="score">×0.5</span>
+    </div>
+    <div class="score-item">
+      <span class="action">🔄 リポスト</span>
+      <span class="score">×1.0</span>
+    </div>
+    <div class="score-item">
+      <span class="action">💬 リプライ</span>
+      <span class="score">×13.5</span>
+    </div>
+    <div class="score-item">
+      <span class="action">👤 プロフクリック</span>
+      <span class="score">×12.0</span>
+    </div>
+    <div class="score-item highlight" style="grid-column: span 2;">
+      <span class="action">💬→❤️ リプに返信</span>
+      <span class="score">×75.0</span>
+    </div>
+  </div>
+  <div class="big-number">75倍</div>
+  <div class="caption">リプに返信するだけでスコア激増！</div>
+  <div class="slide-num">8 / 33</div>
+</body>
+</html>

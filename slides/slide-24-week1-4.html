@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #1DA1F2;
+    }
+    .phase {
+      font-size: 32px;
+      color: #27ae60;
+      margin-bottom: 40px;
+    }
+    .goal {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .goal-text { color: #8899a6; font-size: 40px; }
+    .goal-num { color: #1DA1F2; }
+    .tasks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 90%;
+    }
+    .task {
+      background: rgba(255,255,255,0.05);
+      padding: 30px 40px;
+      border-radius: 15px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .task-icon {
+      font-size: 36px;
+    }
+    .kpi {
+      margin-top: 40px;
+      font-size: 28px;
+      color: #f39c12;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">📅 Week 1-4：基盤構築</h1>
+  <div class="phase">Phase 1 / 4</div>
+  <div class="goal">
+    <span class="goal-text">目標: </span>
+    <span class="goal-num">0 → 500</span>
+    <span class="goal-text"> フォロワー</span>
+  </div>
+  <div class="tasks">
+    <div class="task"><span class="task-icon">👤</span>プロフィール完全最適化</div>
+    <div class="task"><span class="task-icon">🔍</span>競合20アカウント分析</div>
+    <div class="task"><span class="task-icon">📝</span>1日3投稿</div>
+    <div class="task"><span class="task-icon">💬</span>1日20リプライ</div>
+    <div class="task"><span class="task-icon">🧵</span>週1スレッド投稿</div>
+    <div class="task"><span class="task-icon">📋</span>ターゲットリスト作成</div>
+  </div>
+  <div class="kpi">📊 KPI: 投稿84件、リプ560件（4週間）</div>
+  <div class="slide-num">24 / 33</div>
+</body>
+</html>

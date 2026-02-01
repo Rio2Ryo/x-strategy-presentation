@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>スライド11: 1アカウント1ジャンル</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 1920px;
+            height: 1080px;
+            background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 100px;
+        }
+        .slide-number {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            font-size: 24px;
+            color: rgba(255,255,255,0.4);
+        }
+        .main-message {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .icon-large {
+            font-size: 120px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 100px;
+            font-weight: bold;
+            color: #1DA1F2;
+            margin-bottom: 30px;
+            letter-spacing: 0.05em;
+        }
+        .subtitle {
+            font-size: 42px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 80px;
+        }
+        .comparison {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            width: 100%;
+            max-width: 1600px;
+        }
+        .comparison-item {
+            flex: 1;
+            max-width: 650px;
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+        }
+        .bad-example {
+            background: rgba(248, 113, 113, 0.1);
+            border: 3px solid rgba(248, 113, 113, 0.4);
+        }
+        .good-example {
+            background: rgba(74, 222, 128, 0.1);
+            border: 3px solid rgba(74, 222, 128, 0.4);
+        }
+        .comparison-icon {
+            font-size: 80px;
+            margin-bottom: 25px;
+        }
+        .comparison-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .bad-example .comparison-title {
+            color: #f87171;
+        }
+        .good-example .comparison-title {
+            color: #4ade80;
+        }
+        .comparison-content {
+            font-size: 28px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+        }
+        .comparison-content span {
+            display: block;
+        }
+        .bottom-message {
+            position: absolute;
+            bottom: 80px;
+            font-size: 32px;
+            color: rgba(255,255,255,0.6);
+        }
+        .highlight {
+            color: #1DA1F2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-number">11</div>
+    
+    <div class="main-message">
+        <div class="icon-large">🎯</div>
+        <h1>1アカウント1ジャンル</h1>
+        <div class="subtitle">専門性がフォローの理由になる</div>
+    </div>
+    
+    <div class="comparison">
+        <div class="comparison-item bad-example">
+            <div class="comparison-icon">❌</div>
+            <div class="comparison-title">NG例：なんでも発信</div>
+            <div class="comparison-content">
+                <span>今日のランチ🍜</span>
+                <span>株が上がった📈</span>
+                <span>猫かわいい🐱</span>
+                <span>政治について思うこと...</span>
+                <span>→ 何の人かわからない</span>
+            </div>
+        </div>
+        
+        <div class="comparison-item good-example">
+            <div class="comparison-icon">✅</div>
+            <div class="comparison-title">OK例：特化アカウント</div>
+            <div class="comparison-content">
+                <span>副業で月5万円稼ぐ方法</span>
+                <span>初心者向けノウハウ</span>
+                <span>実践レポート</span>
+                <span>失敗談と学び</span>
+                <span>→ <span class="highlight">フォローする理由が明確</span></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-message">
+        「この人をフォローすると<span class="highlight">〇〇</span>の情報が得られる」を明確に
+    </div>
+</body>
+</html>

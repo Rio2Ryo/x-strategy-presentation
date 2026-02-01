@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 52px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #1DA1F2;
+    }
+    .methods {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 95%;
+    }
+    .method {
+      background: rgba(255,255,255,0.05);
+      padding: 35px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .method-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    .method-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1DA1F2;
+    }
+    .method-desc {
+      font-size: 22px;
+      color: #8899a6;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">💰 6つの収益化方法</h1>
+  <div class="methods">
+    <div class="method">
+      <div class="method-icon">📊</div>
+      <div class="method-title">インプレッション収益</div>
+      <div class="method-desc">500万imp/3ヶ月で資格</div>
+    </div>
+    <div class="method">
+      <div class="method-icon">🔗</div>
+      <div class="method-title">アフィリエイト</div>
+      <div class="method-desc">商品・サービス紹介</div>
+    </div>
+    <div class="method">
+      <div class="method-icon">📚</div>
+      <div class="method-title">コンテンツ販売</div>
+      <div class="method-desc">note、Brain等</div>
+    </div>
+    <div class="method">
+      <div class="method-icon">🏢</div>
+      <div class="method-title">企業案件</div>
+      <div class="method-desc">1万フォロワー〜</div>
+    </div>
+    <div class="method">
+      <div class="method-icon">💼</div>
+      <div class="method-title">コンサル・サービス</div>
+      <div class="method-desc">専門性を活かす</div>
+    </div>
+    <div class="method">
+      <div class="method-icon">🔔</div>
+      <div class="method-title">サブスクリプション</div>
+      <div class="method-desc">Xプレミアム機能</div>
+    </div>
+  </div>
+  <div class="slide-num">29 / 33</div>
+</body>
+</html>

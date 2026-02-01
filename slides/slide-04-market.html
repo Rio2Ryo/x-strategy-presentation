@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 60px;
+      color: #1DA1F2;
+    }
+    .stats {
+      display: flex;
+      gap: 80px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 100px;
+      font-weight: bold;
+      color: #1DA1F2;
+    }
+    .stat-unit {
+      font-size: 40px;
+      color: #8899a6;
+    }
+    .stat-label {
+      font-size: 28px;
+      color: #8899a6;
+      margin-top: 15px;
+    }
+    .highlight {
+      margin-top: 60px;
+      font-size: 36px;
+      background: rgba(29, 161, 242, 0.2);
+      padding: 30px 60px;
+      border-radius: 20px;
+      border: 2px solid #1DA1F2;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">📊 2026年のX市場</h1>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">4.21<span class="stat-unit">億人</span></div>
+      <div class="stat-label">世界ユーザー数</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">6,700<span class="stat-unit">万人</span></div>
+      <div class="stat-label">日本ユーザー数</div>
+    </div>
+  </div>
+  <div class="highlight">🇯🇵 日本は世界2位のX大国！</div>
+  <div class="slide-num">4 / 33</div>
+</body>
+</html>

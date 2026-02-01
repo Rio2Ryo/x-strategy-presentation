@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 60px;
+      color: #1DA1F2;
+    }
+    .elements {
+      display: flex;
+      gap: 60px;
+    }
+    .element {
+      width: 350px;
+      height: 400px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+      border: 3px solid transparent;
+      transition: all 0.3s;
+    }
+    .element:nth-child(1) { border-color: #e74c3c; }
+    .element:nth-child(2) { border-color: #f39c12; }
+    .element:nth-child(3) { border-color: #27ae60; }
+    .num {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .element:nth-child(1) .num { color: #e74c3c; }
+    .element:nth-child(2) .num { color: #f39c12; }
+    .element:nth-child(3) .num { color: #27ae60; }
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-size: 24px;
+      color: #8899a6;
+      line-height: 1.6;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🎯 アルゴリズム攻略の3要素</h1>
+  <div class="elements">
+    <div class="element">
+      <div class="num">1</div>
+      <div class="title">滞在時間</div>
+      <div class="desc">ユーザーがポストに<br>滞在する時間</div>
+    </div>
+    <div class="element">
+      <div class="num">2</div>
+      <div class="title">関心度</div>
+      <div class="desc">発信軸と<br>グルーピングの一致</div>
+    </div>
+    <div class="element">
+      <div class="num">3</div>
+      <div class="title">親密度</div>
+      <div class="desc">ユーザー間の<br>やり取り頻度</div>
+    </div>
+  </div>
+  <div class="slide-num">7 / 33</div>
+</body>
+</html>

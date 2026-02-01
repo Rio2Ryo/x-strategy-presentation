@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #1DA1F2;
+    }
+    .hacks {
+      display: flex;
+      gap: 40px;
+      width: 90%;
+    }
+    .hack {
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .hack-icon {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    .hack-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #1DA1F2;
+    }
+    .hack-desc {
+      font-size: 24px;
+      color: #8899a6;
+      margin-bottom: 20px;
+    }
+    .hack-example {
+      font-size: 20px;
+      background: rgba(29, 161, 242, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🎯 UIハック手法</h1>
+  <div class="hacks">
+    <div class="hack">
+      <div class="hack-icon">🖼️</div>
+      <div class="hack-title">4枚画像トリミング</div>
+      <div class="hack-desc">タップしないと全体が見えない</div>
+      <div class="hack-example">例: マクドナルド<br>クイズ形式</div>
+    </div>
+    <div class="hack">
+      <div class="hack-icon">👤</div>
+      <div class="hack-title">プロフ遷移誘導</div>
+      <div class="hack-desc">「ヘッダーに収まりません」</div>
+      <div class="hack-example">例: Google Japan<br>続きはプロフで</div>
+    </div>
+    <div class="hack">
+      <div class="hack-icon">🔄</div>
+      <div class="hack-title">逆さ画像</div>
+      <div class="hack-desc">スマホを物理的に動かさせる</div>
+      <div class="hack-example">滞在時間UP<br>話題性◎</div>
+    </div>
+  </div>
+  <div class="slide-num">10 / 33</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #1DA1F2;
+    }
+    .phase {
+      font-size: 32px;
+      color: #9b59b6;
+      margin-bottom: 40px;
+    }
+    .goal {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .goal-text { color: #8899a6; font-size: 40px; }
+    .goal-num { color: #1DA1F2; }
+    .tasks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      width: 90%;
+    }
+    .task {
+      background: rgba(255,255,255,0.05);
+      padding: 30px 40px;
+      border-radius: 15px;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .task-icon {
+      font-size: 36px;
+    }
+    .kpi {
+      margin-top: 40px;
+      font-size: 28px;
+      color: #f39c12;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🌟 Week 13〜：スケール</h1>
+  <div class="phase">Phase 4 / 4</div>
+  <div class="goal">
+    <span class="goal-text">目標: </span>
+    <span class="goal-num">5,000 → 10,000+</span>
+    <span class="goal-text"> フォロワー</span>
+  </div>
+  <div class="tasks">
+    <div class="task"><span class="task-icon">💰</span>広告収益の最大化</div>
+    <div class="task"><span class="task-icon">📚</span>有料コンテンツ販売開始</div>
+    <div class="task"><span class="task-icon">🌐</span>外部メディア展開</div>
+    <div class="task"><span class="task-icon">🤖</span>投稿の自動化・効率化</div>
+    <div class="task"><span class="task-icon">👥</span>コミュニティ運営</div>
+    <div class="task"><span class="task-icon">📈</span>次の1万人を目指す</div>
+  </div>
+  <div class="kpi">📊 KPI: 月間収益開始、インプ100万+/月</div>
+  <div class="slide-num">27 / 33</div>
+</body>
+</html>

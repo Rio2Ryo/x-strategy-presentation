@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 52px;
+      font-weight: bold;
+      margin-bottom: 60px;
+      color: #1DA1F2;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      width: 90%;
+    }
+    .action {
+      background: rgba(255,255,255,0.05);
+      padding: 45px 40px;
+      border-radius: 25px;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      transition: transform 0.3s;
+    }
+    .action-num {
+      font-size: 48px;
+      font-weight: bold;
+      color: #1DA1F2;
+      background: rgba(29, 161, 242, 0.2);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .action-content {
+      flex: 1;
+    }
+    .action-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+    }
+    .action-desc {
+      font-size: 24px;
+      color: #8899a6;
+      line-height: 1.5;
+    }
+    .action-highlight {
+      color: #f39c12;
+      font-weight: bold;
+    }
+    .action-time {
+      display: inline-block;
+      background: rgba(29, 161, 242, 0.3);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 20px;
+      color: #1DA1F2;
+      margin-top: 10px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🚀 今日からできる4つのアクション</h1>
+  <div class="actions">
+    <div class="action">
+      <div class="action-num">1</div>
+      <div class="action-content">
+        <div class="action-title">プロフィールを最適化</div>
+        <div class="action-desc">
+          <span class="action-highlight">何者か</span>を明確に。<br>
+          アイコン・ヘッダー・自己紹介を整える
+        </div>
+        <div class="action-time">⏱ 30分</div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="action-num">2</div>
+      <div class="action-content">
+        <div class="action-title">発信ジャンルを1つ決める</div>
+        <div class="action-desc">
+          <span class="action-highlight">得意 × 需要</span>の交差点を探す<br>
+          ブレない軸を作る
+        </div>
+        <div class="action-time">⏱ 15分</div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="action-num">3</div>
+      <div class="action-content">
+        <div class="action-title">同ジャンル10人をフォロー</div>
+        <div class="action-desc">
+          伸びてるアカウントを<span class="action-highlight">研究</span><br>
+          リプ・引用で交流を始める
+        </div>
+        <div class="action-time">⏱ 20分</div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="action-num">4</div>
+      <div class="action-content">
+        <div class="action-title">最初のポストを投稿</div>
+        <div class="action-desc">
+          完璧を求めない。<span class="action-highlight">まず出す</span><br>
+          自己紹介 or 価値提供ポスト
+        </div>
+        <div class="action-time">⏱ 10分</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">32 / 33</div>
+</body>
+</html>

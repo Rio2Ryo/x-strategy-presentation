@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 52px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #1DA1F2;
+    }
+    table {
+      width: 90%;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+    }
+    th {
+      font-size: 28px;
+      color: #1DA1F2;
+      padding: 20px;
+      text-align: left;
+    }
+    td {
+      font-size: 26px;
+      padding: 25px 30px;
+      background: rgba(255,255,255,0.05);
+    }
+    tr td:first-child {
+      border-radius: 15px 0 0 15px;
+      font-weight: bold;
+    }
+    tr td:last-child {
+      border-radius: 0 15px 15px 0;
+    }
+    .pattern-icon {
+      font-size: 32px;
+      margin-right: 15px;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">5つのアカウントパターン × 推奨ニッチ</h1>
+  <table>
+    <tr>
+      <th>パターン</th>
+      <th>ニッチ</th>
+      <th>具体例</th>
+    </tr>
+    <tr>
+      <td><span class="pattern-icon">🤖</span>AI活用×副業</td>
+      <td>AI・テック + 副業</td>
+      <td>「AIで月5万稼ぐ方法」</td>
+    </tr>
+    <tr>
+      <td><span class="pattern-icon">📚</span>スキル学習×初心者</td>
+      <td>生産性・ライフハック</td>
+      <td>「プログラミング学習記」</td>
+    </tr>
+    <tr>
+      <td><span class="pattern-icon">🎯</span>ニッチ特化×専門家</td>
+      <td>ウェルネス・メンタル</td>
+      <td>「HSPの生き方」</td>
+    </tr>
+    <tr>
+      <td><span class="pattern-icon">📰</span>キュレーション型</td>
+      <td>AI・テック</td>
+      <td>「AIニュース毎日まとめ」</td>
+    </tr>
+    <tr>
+      <td><span class="pattern-icon">🚀</span>ストーリー挑戦型</td>
+      <td>副業・投資</td>
+      <td>「0から投資で100万円」</td>
+    </tr>
+  </table>
+  <div class="slide-num">15 / 33</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: linear-gradient(135deg, #0a1628 0%, #1a1a2e 50%, #16213e 100%);
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 60px;
+    }
+    .header {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #1DA1F2;
+    }
+    .subheader {
+      font-size: 32px;
+      color: #8899a6;
+      margin-bottom: 50px;
+    }
+    .content {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+    }
+    .character {
+      background: linear-gradient(135deg, #00a8e8, #0077b6);
+      width: 300px;
+      height: 400px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 120px;
+    }
+    .char-name {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    .details {
+      flex: 1;
+    }
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 32px;
+      margin-bottom: 30px;
+      background: rgba(255,255,255,0.05);
+      padding: 25px 40px;
+      border-radius: 15px;
+    }
+    .check {
+      color: #27ae60;
+      font-size: 36px;
+    }
+    .stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 56px;
+      font-weight: bold;
+      color: #1DA1F2;
+    }
+    .stat-label {
+      font-size: 24px;
+      color: #8899a6;
+    }
+    .slide-num {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      font-size: 24px;
+      color: #8899a6;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">「あきこちゃん方式」</h1>
+  <div class="subheader">日本企業の成功パターン</div>
+  <div class="content">
+    <div class="character">
+      👩‍🎓
+      <div class="char-name">あきこちゃん</div>
+    </div>
+    <div class="details">
+      <div class="detail-item">
+        <span class="check">✓</span>
+        <span>大学2年生、ローソンでバイト中の設定</span>
+      </div>
+      <div class="detail-item">
+        <span class="check">✓</span>
+        <span>企業感を消して親近感UP</span>
+      </div>
+      <div class="detail-item">
+        <span class="check">✓</span>
+        <span>キャラが発信 → ファンがつく</span>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">892万</div>
+          <div class="stat-label">フォロワー</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">ローソン</div>
+          <div class="stat-label">公式アカウント</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">14 / 33</div>
+</body>
+</html>
